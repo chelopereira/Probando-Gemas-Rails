@@ -1,11 +1,13 @@
-<% if user_signed_in? %>
-  <li>
-  <%= link_to('Cerrar Sesion', destroy_user_session_path, :method => :delete) %>        
-  </li>
-<% else %>
-  <li>
-  <%= link_to('Iniciar Sesion', new_user_session_path)  %>  
-  </li>
-<% end %>
+<div class="container text-center">
+	<% if user_signed_in? %>
+	  <li>
+	  <%= link_to('Cerrar Sesion', destroy_user_session_path, :method => :delete) %>        
+	  </li>
+	<% else %>
+	  <li>
+	  <%= link_to('Iniciar Sesion', new_user_session_path)  %>  
+	  </li>
+	<% end %>
 
-<h1>BIENVENIDO A MI PAGINA WEB </h1>
+	<h1>BIENVENIDO A MI PAGINA WEB </h1>	
+</div>
